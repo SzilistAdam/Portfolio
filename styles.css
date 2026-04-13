@@ -5,6 +5,10 @@ body {
     color: white;
 }
 
+body {
+    border: 10px solid red !important;
+}
+
 /* HEADER */
 header {
     display: flex;
