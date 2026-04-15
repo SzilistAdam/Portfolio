@@ -585,13 +585,13 @@ footer a:hover {
     padding: 20px 20px;
     gap: 15px;
     align-items: center;
-    justify-content: flex-start;
   }
 
   .video-card {
     min-width: 100%;
     width: 100%;
     max-width: 300px;
+    justify-content: flex-start;
   }
 
   .video-card img {
