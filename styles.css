@@ -405,6 +405,8 @@ footer a:hover {
   text-decoration: none;
   color: white;
   transition: transform 0.2s ease;
+  min-width: 320px;
+  width: 320px;
 }
 
 .video-card:hover img {
@@ -415,6 +417,9 @@ footer a:hover {
   margin-bottom: 8px;
   font-weight: bold;
   font-size: 16px;
+  min-height: 40px;
+  display: flex;
+  align-items: center;
 }
 
 .video-card img {
@@ -430,4 +435,29 @@ footer a:hover {
   max-width: 500px;
   color: #ccc;
   line-height: 1.6;
+}
+
+/* TAGS */
+.video-tags {
+  display: flex;
+  gap: 8px;
+  margin-top: 12px;
+  flex-wrap: wrap;
+}
+
+.tag {
+  display: inline-block;
+  padding: 4px 10px;
+  background: rgba(85, 85, 85, 0.6);
+  color: #ddd;
+  border-radius: 16px;
+  font-size: 12px;
+  font-weight: 500;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.2s ease;
+}
+
+.tag:hover {
+  background: rgba(85, 85, 85, 0.9);
+  border-color: rgba(255, 255, 255, 0.3);
 }
