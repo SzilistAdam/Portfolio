@@ -1,148 +1,147 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Adam Szilagyi - Portfolio</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adam Szilagyi - Portfolio</title>
 
-<link rel="stylesheet" href="styles.css">
-</head>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-<body>
+  <body>
+    <!-- HEADER -->
+    <header>
+      <a href="index.html" class="title">Adam Szilagyi - Portfolio</a>
 
-<!-- HEADER -->
-<header>
-    <div class="title">Adam Szilagyi - Portfolio</div>
-
-    <div class="nav-buttons">
-        <a href="index.html">Home</a>
+      <div class="nav-buttons">
         <a href="informational.html">Informational</a>
         <a href="freeform.html">Freeform</a>
         <a href="news.html">News Package</a>
         <a href="cv.pdf" target="_blank">CV</a>
-    </div>
-</header>
+      </div>
+    </header>
 
-<!-- ABOUT -->
-<section class="about fade-in">
-    <img class="headshot" src="images/headshot.jpg" alt="Headshot">
+    <!-- ABOUT -->
+    <section class="about fade-in">
+      <img class="headshot" src="images/headshot.jpg" alt="Headshot" />
 
-    <div>
+      <div>
         <h2>About Me</h2>
-        <p>
-            ABOUT ME SECTION.
-        </p>
+        <p>ABOUT ME SECTION.</p>
 
-        <img class="cert" src="images/premiere-cert.png" alt="Cert1">
+        <img class="cert" src="images/premiere-cert.png" alt="Cert1" />
 
         <div class="socials">
-            <a href="www.youtube.com/">YT</a>
-            <a href="#">IG</a>
-            <a href="#">LI</a>
+          <a href="www.youtube.com/">YT</a>
+          <a href="#">IG</a>
+          <a href="#">LI</a>
         </div>
-    </div>
-</section>
+      </div>
+    </section>
 
-<!-- SKILLS -->
-<section class="skills fade-in">
-    <h2>Skills</h2>
+    <!-- SKILLS -->
+    <section class="skills fade-in">
+      <h2>Skills</h2>
 
-    <div class="skill">
+      <div class="skill">
         <div class="skill-name">Premiere Pro (8/10)</div>
-        <div class="bar"><div class="bar-fill" style="width: 80%;"></div></div>
-    </div>
+        <div class="bar"><div class="bar-fill" style="width: 80%"></div></div>
+      </div>
 
-    <div class="skill">
+      <div class="skill">
         <div class="skill-name">After Effects (6/10)</div>
-        <div class="bar"><div class="bar-fill" style="width: 60%;"></div></div>
-    </div>
+        <div class="bar"><div class="bar-fill" style="width: 60%"></div></div>
+      </div>
 
-    <div class="skill">
+      <div class="skill">
         <div class="skill-name">Camera Work (7/10)</div>
-        <div class="bar"><div class="bar-fill" style="width: 70%;"></div></div>
-    </div>
-</section>
-    
-<!-- ROW 1 -->
-<section class="row fade-in">
-    <img id="img1" src="images/info1.jpg" alt="Informational preview">
+        <div class="bar"><div class="bar-fill" style="width: 70%"></div></div>
+      </div>
+    </section>
 
-    <div class="desc">
+    <!-- ROW 1 -->
+    <section class="row fade-in">
+      <img id="img1" src="images/info1.jpg" alt="Informational preview" />
+
+      <div class="desc">
         <h3>Informational</h3>
-        <button onclick="location.href='informational.html'">View Page</button>
+        <button onclick="location.href = 'informational.html'">
+          View Page
+        </button>
         <p>Informational video projects and storytelling-based pieces.</p>
-    </div>
-</section>
+      </div>
+    </section>
 
-<!-- ROW 2 -->
-<section class="row fade-in">
-    <img id="img2" src="images/free1.jpg" alt="Freeform preview">
+    <!-- ROW 2 -->
+    <section class="row fade-in">
+      <img id="img2" src="images/free1.jpg" alt="Freeform preview" />
 
-    <div class="desc">
+      <div class="desc">
         <h3>Freeform</h3>
-        <button onclick="location.href='freeform.html'">View Page</button>
+        <button onclick="location.href = 'freeform.html'">View Page</button>
         <p>Creative, experimental, and style-driven video work.</p>
-    </div>
-</section>
+      </div>
+    </section>
 
-<!-- ROW 3 -->
-<section class="row fade-in">
-    <img id="img3" src="images/news1.jpg" alt="News preview">
+    <!-- ROW 3 -->
+    <section class="row fade-in">
+      <img id="img3" src="images/news1.jpg" alt="News preview" />
 
-    <div class="desc">
+      <div class="desc">
         <h3>News Packages</h3>
-        <button onclick="location.href='news.html'">View Page</button>
+        <button onclick="location.href = 'news.html'">View Page</button>
         <p>News-style video packages and broadcast-style reporting.</p>
-    </div>
-</section>
-    
-<!-- CONTACT -->
-<section class="contact fade-in">
-    <h2>Contact Me</h2>
+      </div>
+    </section>
 
-    <form action="https://formspree.io/f/mwvaejre" method="POST">
-        <input type="text" name="name" placeholder="Your Name" required>
-        <input type="email" name="email" placeholder="Your Email" required>
+    <!-- CONTACT -->
+    <section class="contact fade-in">
+      <h2>Contact Me</h2>
+
+      <form action="https://formspree.io/f/mwvaejre" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
         <textarea name="message" placeholder="Message..." rows="5"></textarea>
         <button class="submit" type="submit">Send</button>
-    </form>
-</section>
+      </form>
+    </section>
 
-<!-- FOOTER -->
-<footer>
-    <div>Adam Szilagyi - Portfolio</div>
+    <!-- FOOTER -->
+    <footer>
+      <div>Adam Szilagyi - Portfolio</div>
 
-    <div>
-        <a href="www.youtube.com/">YT</a> |
-        <a href="#">IG</a> |
+      <div>
+        <a href="www.youtube.com/">YT</a> | <a href="#">IG</a> |
         <a href="#">LI</a>
-    </div>
-</footer>
+      </div>
+    </footer>
 
-<!-- SLIDESHOW SCRIPT -->
-<script>
-    const infoImgs = [
+    <!-- SLIDESHOW SCRIPT -->
+    <script>
+      const infoImgs = [
         "images/info1.jpg",
         "images/info2.jpg",
         "images/info3.jpg",
-        "images/info4.jpg"
-    ];
+        "images/info4.jpg",
+      ];
 
-    const freeImgs = [
+      const freeImgs = [
         "images/free1.jpg",
         "images/free2.jpg",
-        "images/free3.jpg"
-    ];
+        "images/free3.jpg",
+      ];
 
-    const newsImgs = [
+      const newsImgs = [
         "images/news1.jpg",
         "images/news2.jpg",
-        "images/news3.jpg"
-    ];
+        "images/news3.jpg",
+      ];
 
-    let i1 = 0, i2 = 0, i3 = 0;
+      let i1 = 0,
+        i2 = 0,
+        i3 = 0;
 
-    setInterval(() => {
+      setInterval(() => {
         i1 = (i1 + 1) % infoImgs.length;
         document.getElementById("img1").src = infoImgs[i1];
 
@@ -151,22 +150,21 @@
 
         i3 = (i3 + 1) % newsImgs.length;
         document.getElementById("img3").src = newsImgs[i3];
-    }, 2500);
-</script>
+      }, 2500);
+    </script>
 
-<script>
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
+    <script>
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
             entry.target.classList.add("show");
-        }
-    });
-});
+          }
+        });
+      });
 
-document.querySelectorAll(".fade-in").forEach(el => {
-    observer.observe(el);
-});
-</script>
-
-</body>
+      document.querySelectorAll(".fade-in").forEach((el) => {
+        observer.observe(el);
+      });
+    </script>
+  </body>
 </html>
