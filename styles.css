@@ -1,3 +1,6 @@
+/* ========================================
+   GLOBAL STYLES
+   ======================================== */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -5,7 +8,9 @@ body {
   color: white;
 }
 
-/* HEADER */
+/* ========================================
+   HEADER
+   ======================================== */
 header {
   display: flex;
   justify-content: space-between;
@@ -14,7 +19,6 @@ header {
   background: #1a1a1a;
   position: sticky;
   top: 0;
-
   z-index: 1000;
 }
 
@@ -24,172 +28,14 @@ header {
   color: white;
   text-decoration: none;
   cursor: pointer;
-  transition: opacity 0.2s ease;
+  transition:
+    opacity 0.2s ease,
+    transform 0.2s ease;
 }
 
 .title:hover {
   transform: scale(1.05);
   opacity: 0.8;
-  transition:
-    opacity 0.2s,
-    transform 0.2s;
-}
-
-.nav-buttons a {
-  margin-left: 10px;
-  padding: 10px 14px;
-  background: #333;
-  color: white;
-  text-decoration: none;
-  border-radius: 6px;
-  transition: 0.2s;
-}
-
-.nav-buttons a:hover {
-  background: #555;
-}
-
-/* ABOUT */
-.about {
-  display: flex;
-  gap: 20px;
-  padding: 40px;
-  align-items: center;
-}
-
-/* HEADSHOT */
-.headshot {
-  width: 180px !important;
-  height: 180px !important;
-  border-radius: 50%;
-  object-fit: cover;
-}
-
-.cert {
-  width: 80px !important;
-  height: auto !important;
-  margin-top: 10px !important;
-}
-
-.socials a {
-  margin-right: 10px;
-  color: white;
-  text-decoration: none;
-  font-size: 18px;
-}
-
-/* ROWS */
-.row {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 40px;
-  border-top: 1px solid #222;
-}
-
-.row img {
-  width: 300px;
-  height: 180px;
-  object-fit: cover;
-  border-radius: 10px;
-}
-
-.desc {
-  max-width: 400px;
-  padding: 0 20px;
-}
-
-.row button {
-  padding: 10px 15px;
-  border: none;
-  border-radius: 6px;
-  background: #444;
-  color: white;
-  cursor: pointer;
-}
-
-.row button:hover {
-  background: #666;
-}
-
-/* CONTACT */
-.contact {
-  padding: 40px;
-  border-top: 1px solid #222;
-}
-
-form {
-  display: flex;
-  flex-direction: column;
-  max-width: 400px;
-}
-
-input,
-textarea {
-  margin-bottom: 10px;
-  padding: 10px;
-  border: none;
-  border-radius: 5px;
-}
-
-button.submit {
-  background: #444;
-  color: white;
-  padding: 10px;
-  border: none;
-  cursor: pointer;
-}
-
-/* ===== FADE-IN SCROLL ANIMATION ===== */
-.fade-in {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: all 0.8s ease;
-}
-
-.fade-in.show {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-/* ===== SKILLS SECTION ===== */
-.skills {
-  padding-top: 40px;
-  padding-bottom: 40px;
-  padding-left: 180px;
-  padding-right: 180px;
-  border-top: 1px solid #222;
-}
-
-.skill {
-  margin-bottom: 15px;
-}
-
-.skill-name {
-  margin-bottom: 5px;
-  color: #ccc;
-}
-
-.bar {
-  width: 100%;
-  background: #222;
-  height: 10px;
-  border-radius: 5px;
-  overflow: hidden;
-}
-
-.bar-fill {
-  height: 100%;
-  background: #555;
-}
-
-/* FOOTER */
-footer {
-  display: flex;
-  justify-content: space-between;
-  padding: 20px 40px;
-  background: #1a1a1a;
-  font-size: 12px;
 }
 
 .nav-buttons a {
@@ -209,9 +55,9 @@ footer {
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
 }
 
-/* =========================
+/* ========================================
    ABOUT SECTION
-========================= */
+   ======================================== */
 .about {
   display: flex;
   gap: 30px;
@@ -247,12 +93,28 @@ footer {
   margin: 0 0 15px 0;
 }
 
+/* ========================================
+   HEADSHOT & CERTIFICATIONS
+   ======================================== */
+.headshot {
+  width: 220px !important;
+  height: 220px !important;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
 .cert {
-  width: 130px;
+  width: 110px !important;
+  height: 110px !important;
+  border-radius: 50%;
   margin-top: 10px;
+  object-fit: cover;
   filter: drop-shadow(0 10px 15px rgba(0, 0, 0, 0.4));
 }
 
+/* ========================================
+   SOCIAL LINKS
+   ======================================== */
 .socials {
   margin-top: 10px;
 }
@@ -261,7 +123,8 @@ footer {
   margin-right: 12px;
   font-size: 18px;
   color: #ccc;
-  transition: 0.2s;
+  text-decoration: none;
+  transition: all 0.2s ease;
 }
 
 .socials a:hover {
@@ -269,9 +132,9 @@ footer {
   transform: scale(1.1);
 }
 
-/* =========================
+/* ========================================
    ROW SECTIONS
-========================= */
+   ======================================== */
 .row {
   display: flex;
   align-items: flex-start;
@@ -322,7 +185,39 @@ footer {
   line-height: 1.6;
 }
 
-/* BUTTONS */
+/* ========================================
+   SKILLS SECTION
+   ======================================== */
+.skills {
+  padding: 40px 180px;
+  border-top: 1px solid #222;
+}
+
+.skill {
+  margin-bottom: 15px;
+}
+
+.skill-name {
+  margin-bottom: 5px;
+  color: #ccc;
+}
+
+.bar {
+  width: 100%;
+  background: #222;
+  height: 10px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.bar-fill {
+  height: 100%;
+  background: #555;
+}
+
+/* ========================================
+   BUTTONS
+   ======================================== */
 button {
   margin-top: 10px;
   padding: 10px 16px;
@@ -340,9 +235,9 @@ button:hover {
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
 }
 
-/* =========================
-   CONTACT
-========================= */
+/* ========================================
+   CONTACT SECTION
+   ======================================== */
 .contact {
   padding: 60px 40px;
   max-width: 700px;
@@ -364,6 +259,7 @@ textarea {
   background: rgba(255, 255, 255, 0.05);
   color: white;
   outline: none;
+  font-family: Arial, sans-serif;
 }
 
 input:focus,
@@ -371,9 +267,13 @@ textarea:focus {
   border-color: rgba(255, 255, 255, 0.3);
 }
 
-/* =========================
+button.submit {
+  align-self: flex-start;
+}
+
+/* ========================================
    FOOTER
-========================= */
+   ======================================== */
 footer {
   display: flex;
   justify-content: space-between;
@@ -388,15 +288,16 @@ footer a {
   color: #aaa;
   margin-left: 10px;
   text-decoration: none;
+  transition: color 0.2s ease;
 }
 
 footer a:hover {
   color: white;
 }
 
-/* =========================
+/* ========================================
    PAGE LAYOUTS (for detail pages)
-========================= */
+   ======================================== */
 .page-title {
   padding: 40px 40px 10px;
   font-size: 32px;
@@ -408,7 +309,9 @@ footer a:hover {
   color: #aaa;
 }
 
-/* VIDEO SECTION */
+/* ========================================
+   VIDEO SECTION
+   ======================================== */
 .video-row {
   display: flex;
   align-items: flex-start;
@@ -465,7 +368,9 @@ footer a:hover {
   margin-bottom: 12px;
 }
 
-/* TAGS */
+/* ========================================
+   TAGS
+   ======================================== */
 .video-tags {
   display: flex;
   gap: 8px;
@@ -490,11 +395,25 @@ footer a:hover {
   border-color: rgba(255, 255, 255, 0.3);
 }
 
-/* =========================
-   MOBILE/IPHONE RESPONSIVE
-========================= */
+/* ========================================
+   FADE-IN SCROLL ANIMATION
+   ======================================== */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.8s ease;
+}
+
+.fade-in.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ========================================
+   MOBILE/RESPONSIVE (max-width: 768px)
+   ======================================== */
 @media (max-width: 768px) {
-  /* HEADER */
+  /* Header */
   header {
     padding: 15px 20px;
     flex-direction: column;
@@ -511,7 +430,7 @@ footer a:hover {
     font-size: 12px;
   }
 
-  /* ABOUT SECTION */
+  /* About Section */
   .about {
     flex-direction: column;
     padding: 40px 20px;
@@ -532,18 +451,16 @@ footer a:hover {
     font-size: 22px;
   }
 
-  /* SKILLS SECTION */
+  /* Skills Section */
   .skills {
     padding: 30px 20px;
-    padding-left: 20px;
-    padding-right: 20px;
   }
 
   .skill {
     margin-bottom: 12px;
   }
 
-  /* ROW SECTIONS */
+  /* Row Sections */
   .row {
     flex-direction: column;
     padding: 40px 20px;
@@ -572,7 +489,7 @@ footer a:hover {
     align-self: center;
   }
 
-  /* CONTACT */
+  /* Contact */
   .contact {
     padding: 40px 20px;
     max-width: 100%;
@@ -587,7 +504,7 @@ footer a:hover {
     font-size: 16px;
   }
 
-  /* VIDEO SECTION */
+  /* Video Section */
   .video-row {
     flex-direction: column;
     padding: 20px 20px;
@@ -599,7 +516,6 @@ footer a:hover {
     min-width: 100%;
     width: 100%;
     max-width: 300px;
-    justify-content: flex-start;
   }
 
   .video-card img {
@@ -618,6 +534,7 @@ footer a:hover {
     font-size: 14px;
   }
 
+  /* Page Layouts */
   .page-title {
     padding: 20px 20px 10px;
     font-size: 24px;
@@ -628,7 +545,7 @@ footer a:hover {
     font-size: 14px;
   }
 
-  /* FOOTER */
+  /* Footer */
   footer {
     flex-direction: column;
     gap: 15px;
@@ -640,11 +557,13 @@ footer a:hover {
     margin-left: 5px;
   }
 
+  /* Tags */
   .tag {
     font-size: 11px;
     padding: 3px 8px;
   }
 
+  /* Buttons */
   button {
     padding: 8px 12px;
     font-size: 14px;
