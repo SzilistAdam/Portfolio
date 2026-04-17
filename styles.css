@@ -156,8 +156,8 @@ button.submit {
 .skills {
   padding-top: 40px;
   padding-bottom: 40px;
-  padding-left: 150px;
-  padding-right: 150px;
+  padding-left: 180px;
+  padding-right: 180px;
   border-top: 1px solid #222;
 }
 
@@ -411,12 +411,18 @@ footer a:hover {
 /* VIDEO SECTION */
 .video-row {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 30px;
   padding: 30px 40px;
   border-top: 1px solid #222;
   max-width: 1100px;
   margin: 0 auto;
+}
+
+.video-row > div {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
 }
 
 .video-card {
@@ -425,8 +431,9 @@ footer a:hover {
   text-decoration: none;
   color: white;
   transition: transform 0.2s ease;
-  min-width: 320px;
-  width: 320px;
+  min-width: 280px;
+  width: 280px;
+  flex-shrink: 0;
 }
 
 .video-card:hover img {
@@ -455,6 +462,7 @@ footer a:hover {
   max-width: 550px;
   color: #ccc;
   line-height: 1.6;
+  margin-bottom: 12px;
 }
 
 /* TAGS */
