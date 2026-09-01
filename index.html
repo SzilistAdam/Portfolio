@@ -3,29 +3,29 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Adam Szilagyi - Portfolio</title>
-
+    <meta
+      name="description"
+      content="Adam Szilagyi is a University of North Florida student with three years of hands-on video production experience producing documentaries, news features, informational videos, and creative projects."
+    />
+    <title>Adam Szilagyi | Video Production Portfolio</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
 
   <body>
-    <!-- HEADER -->
     <header>
-      <a href="index.html" class="title">Adam Szilagyi - Portfolio</a>
+      <a href="index.html" class="title">ADAM SZILAGYI</a>
 
       <nav class="nav-buttons" aria-label="Primary navigation">
         <a href="informational.html">Informational</a>
+        <a href="news.html">News</a>
         <a href="freeform.html">Freeform</a>
-        <a href="news.html">News Package</a>
-        <a href="cv.pdf" target="_blank" rel="noopener noreferrer">CV</a>
+        <a href="cv.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+        <a href="#contact">Contact</a>
       </nav>
     </header>
 
     <main id="main-content">
-      <h1 class="visually-hidden">Adam Szilagyi Video Production Portfolio</h1>
-
-      <!-- ABOUT -->
-      <section class="about fade-in">
+      <section class="hero section-shell fade-in">
         <img
           class="headshot"
           src="images/headshot.jpg"
@@ -35,333 +35,301 @@
           decoding="async"
         />
 
-        <div>
-          <h2>About Me</h2>
+        <div class="hero-copy">
+          <p class="eyebrow">UNIVERSITY OF NORTH FLORIDA STUDENT</p>
+          <h1>ADAM SZILAGYI</h1>
+          <h2>Video Production | Videography | Video Editing</h2>
           <p>
-            Hello, I am Adam Szilagyi, a freshman at the University of North
-            Florida pursuing a degree in Nursing. Video production is one of my
-            hobbies and I'm glad to have had the opportunity to learn the video
-            production process in the CHS TV Production Class and Academy.
+            I produce documentary, news, and informational video work with a
+            strong focus on storytelling, interview-driven reporting, and clean,
+            purposeful post-production.
           </p>
 
-          <img
-            class="cert"
-            src="images/premiere-cert.png"
-            alt="Adobe Premiere Pro certification badge"
-            width="601"
-            height="601"
-            loading="lazy"
-            decoding="async"
-          />
-          <img
-            class="cert"
-            src="images/after-effects-cert.png"
-            alt="Adobe After Effects certification badge"
-            width="601"
-            height="601"
-            loading="lazy"
-            decoding="async"
-          />
-          <img
-            class="cert"
-            src="images/video-design-cert.png"
-            alt="Professional Video Design certification badge"
-            width="601"
-            height="601"
-            loading="lazy"
-            decoding="async"
-          />
-          
+          <div class="about-inline">
+            <p class="eyebrow">About</p>
+            <p>
+              I’m a University of North Florida student creating video work for
+              documentaries, news features, informational stories, and creative
+              projects. My work includes planning, camera operation, interviews,
+              audio, editing, and motion-based finishing.
+            </p>
 
-          <div class="socials" aria-label="Social links">
-            <a
-              href="https://www.youtube.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              >YT</a
-            >
-            <a
-              href="https://www.instagram.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              >IG</a
-            >
-            <a
-              href="https://www.linkedin.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              >LI</a
-            >
+            <div class="cert-badges" aria-label="Adobe certifications">
+              <img
+                src="images/premiere-cert.png"
+                alt="Adobe Certified Professional - Premiere Pro"
+                width="601"
+                height="601"
+                loading="lazy"
+                decoding="async"
+              />
+              <img
+                src="images/after-effects-cert.png"
+                alt="Adobe Certified Professional - After Effects"
+                width="601"
+                height="601"
+                loading="lazy"
+                decoding="async"
+              />
+              <img
+                src="images/video-design-cert.png"
+                alt="Adobe Certified Professional - Professional Video Design"
+                width="601"
+                height="601"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+
+            <div class="cta-row">
+              <a
+                class="button-link secondary"
+                href="cv.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Resume</a
+              >
+              <a class="button-link secondary" href="#contact">Contact</a>
+            </div>
           </div>
         </div>
       </section>
 
-      <!-- SKILLS -->
-      <section class="skills fade-in" aria-labelledby="skills-heading">
-        <h2 id="skills-heading">Skills</h2>
+      <section id="featured-work" class="section-shell fade-in">
+        <div class="section-heading">
+          <p class="eyebrow">Selected work</p>
+          <h2>Recent projects</h2>
+        </div>
 
-        <div class="skill">
-          <div class="skill-name">Premiere Pro (9/10)</div>
-          <div
-            class="bar"
-            role="progressbar"
-            aria-label="Premiere Pro skill level"
-            aria-valuemin="0"
-            aria-valuemax="10"
-            aria-valuenow="9"
-          >
-            <div class="bar-fill" style="width: 90%"></div>
+        <div class="feature-grid">
+          <article class="feature-card">
+            <img
+              src="images/thumbs/info1.jpg"
+              alt="Jacksonville Zoo Malayan Tiger video thumbnail"
+              width="720"
+              height="405"
+              loading="lazy"
+              decoding="async"
+            />
+            <div class="card-content">
+              <p class="project-type">Documentary</p>
+              <h3>Jacksonville Zoo — Malayan Tiger Video</h3>
+              <p>
+                A documentary profile of Malayan tigers filmed on location with
+                a student production team, featuring interviews with zoo
+                caretakers.
+              </p>
+              <ul class="meta-list">
+                <li>
+                  <strong>Role:</strong> Production, camera, interviews, editing
+                </li>
+                <li>
+                  <strong>Award:</strong> 1st Place — Documentary, SJCSD Film
+                  Festival
+                </li>
+              </ul>
+              <a
+                class="button-link"
+                href="https://youtu.be/GxBQEEWye48"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Watch the Jacksonville Zoo Malayan Tiger documentary"
+                >Watch documentary</a
+              >
+            </div>
+          </article>
+
+          <article class="feature-card">
+            <img
+              src="images/thumbs/news1.jpg"
+              alt="CHS Spring Musical news feature thumbnail"
+              width="720"
+              height="405"
+              loading="lazy"
+              decoding="async"
+            />
+            <div class="card-content">
+              <p class="project-type">News Feature</p>
+              <h3>CHS Spring Musical — News Feature</h3>
+              <p>
+                A news feature covering Creekside High School's spring musical,
+                including interviews, event coverage, and story-driven editing.
+              </p>
+              <ul class="meta-list">
+                <li><strong>Role:</strong> Filming, interviews, editing</li>
+                <li>
+                  <strong>Award:</strong> 1st Place — News Feature, SJCSD Film
+                  Festival
+                </li>
+              </ul>
+              <a
+                class="button-link"
+                href="https://youtu.be/MkvD6lzPgV0"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Watch the CHS Spring Musical news feature"
+                >Watch news feature</a
+              >
+            </div>
+          </article>
+
+          <article class="feature-card">
+            <img
+              src="images/thumbs/info2.jpg"
+              alt="COVID Chronicle documentary thumbnail"
+              width="720"
+              height="405"
+              loading="lazy"
+              decoding="async"
+            />
+            <div class="card-content">
+              <p class="project-type">Documentary</p>
+              <h3>COVID Chronicle</h3>
+              <p>
+                A documentary examining the student experience through the COVID
+                pandemic with interviews and archival storytelling.
+              </p>
+              <ul class="meta-list">
+                <li>
+                  <strong>Role:</strong> Camera, audio, interviews, editing
+                </li>
+              </ul>
+              <a
+                class="button-link"
+                href="https://youtu.be/wInIKZqUEM0"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Watch the COVID Chronicle documentary"
+                >Watch documentary</a
+              >
+            </div>
+          </article>
+
+          <article class="feature-card">
+            <img
+              src="images/thumbs/free1.jpg"
+              alt="Christmas Traditions package thumbnail"
+              width="720"
+              height="405"
+              loading="lazy"
+              decoding="async"
+            />
+            <div class="card-content">
+              <p class="project-type">Creative / Informational</p>
+              <h3>Christmas Traditions Package</h3>
+              <p>
+                A creative storytelling package exploring holiday traditions
+                through interviews, visual narrative, and concise editing.
+              </p>
+              <ul class="meta-list">
+                <li>
+                  <strong>Role:</strong> Interviews, editing, production support
+                </li>
+              </ul>
+              <a
+                class="button-link"
+                href="https://youtu.be/-RjYOG3RNKY"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Watch the Christmas Traditions package"
+                >Watch package</a
+              >
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="skills" class="section-shell fade-in">
+        <div class="section-heading">
+          <p class="eyebrow">Skills</p>
+          <h2>Production skills</h2>
+        </div>
+
+        <div class="skills-layout">
+          <div class="skills-panel">
+            <h3>Video Production</h3>
+            <ul class="skill-list">
+              <li>Adobe Premiere Pro</li>
+              <li>Adobe After Effects</li>
+              <li>Camera Operation</li>
+              <li>Production Audio</li>
+              <li>Video Editing</li>
+              <li>Interviewing</li>
+              <li>Documentary Production</li>
+              <li>News Production</li>
+              <li>Motion Graphics</li>
+            </ul>
+          </div>
+
+          <div class="skills-panel">
+            <h3>Certifications</h3>
+            <ul class="cert-list">
+              <li>Adobe Certified Professional — Premiere Pro | 2025–2027</li>
+              <li>Adobe Certified Professional — After Effects | 2026–2028</li>
+              <li>
+                Adobe Certified Professional — Professional Video Design |
+                2026–2028
+              </li>
+            </ul>
           </div>
         </div>
+      </section>
 
-        <div class="skill">
-          <div class="skill-name">After Effects (7/10)</div>
-          <div
-            class="bar"
-            role="progressbar"
-            aria-label="After Effects skill level"
-            aria-valuemin="0"
-            aria-valuemax="10"
-            aria-valuenow="7"
-          >
-            <div class="bar-fill" style="width: 70%"></div>
+      <section
+        id="contact"
+        class="contact fade-in"
+        aria-labelledby="contact-heading"
+      >
+        <div class="section-heading">
+          <p class="eyebrow">Contact</p>
+          <h2>Get in touch</h2>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-card">
+            <p>
+              <strong>Email:</strong>
+              <a href="mailto:adamszilagyi@gmail.com">adamszilagyi@gmail.com</a>
+            </p>
+            <p><strong>Location:</strong> Jacksonville, FL</p>
+            <p>
+              Available for part-time and freelance video production, editing,
+              videography, and content-creation opportunities in Jacksonville
+              and St. Johns County.
+            </p>
           </div>
+
+          <form action="https://formspree.io/f/mwvaejre" method="POST">
+            <label for="contact-name">Your Name</label>
+            <input
+              id="contact-name"
+              type="text"
+              name="name"
+              autocomplete="name"
+              required
+            />
+            <label for="contact-email">Your Email</label>
+            <input
+              id="contact-email"
+              type="email"
+              name="email"
+              autocomplete="email"
+              required
+            />
+            <label for="contact-message">Message</label>
+            <textarea id="contact-message" name="message" rows="5"></textarea>
+            <button class="submit" type="submit">Send Message</button>
+          </form>
         </div>
-
-        <div class="skill">
-          <div class="skill-name">Camera Work (8/10)</div>
-          <div
-            class="bar"
-            role="progressbar"
-            aria-label="Camera Work skill level"
-            aria-valuemin="0"
-            aria-valuemax="10"
-            aria-valuenow="8"
-          >
-            <div class="bar-fill" style="width: 80%"></div>
-          </div>
-        </div>
-      </section>
-
-      <!-- ROW 1 -->
-      <section class="row fade-in">
-        <img
-          id="img1"
-          src="images/thumbs/info1.jpg"
-          srcset="
-            images/thumbs/small/info1.jpg 360w,
-            images/thumbs/info1.jpg       720w
-          "
-          sizes="(max-width: 768px) min(100vw - 40px, 300px), 340px"
-          alt="Preview image for informational video projects"
-          width="720"
-          height="405"
-          loading="lazy"
-          decoding="async"
-        />
-
-        <div class="desc">
-          <h2>Informational</h2>
-          <p>Informational video projects and storytelling-based pieces.</p>
-          <a class="button-link" href="informational.html">View Page</a>
-        </div>
-      </section>
-
-      <!-- ROW 2 -->
-      <section class="row fade-in">
-        <img
-          id="img2"
-          src="images/thumbs/free1.jpg"
-          srcset="
-            images/thumbs/small/free1.jpg 360w,
-            images/thumbs/free1.jpg       720w
-          "
-          sizes="(max-width: 768px) min(100vw - 40px, 300px), 340px"
-          alt="Preview image for freeform video projects"
-          width="720"
-          height="405"
-          loading="lazy"
-          decoding="async"
-        />
-
-        <div class="desc">
-          <h2>Freeform</h2>
-          <p>Creative, experimental, and style-driven video work.</p>
-          <a class="button-link" href="freeform.html">View Page</a>
-        </div>
-      </section>
-
-      <!-- ROW 3 -->
-      <section class="row fade-in">
-        <img
-          id="img3"
-          src="images/thumbs/news1.jpg"
-          srcset="
-            images/thumbs/small/news1.jpg 360w,
-            images/thumbs/news1.jpg       720w
-          "
-          sizes="(max-width: 768px) min(100vw - 40px, 300px), 340px"
-          alt="Preview image for news package video projects"
-          width="720"
-          height="405"
-          loading="lazy"
-          decoding="async"
-        />
-
-        <div class="desc">
-          <h2>News Packages</h2>
-          <p>News-style video packages and broadcast-style reporting.</p>
-          <a class="button-link" href="news.html">View Page</a>
-        </div>
-      </section>
-
-      <!-- CONTACT -->
-      <section class="contact fade-in" aria-labelledby="contact-heading">
-        <h2 id="contact-heading">Contact Me</h2>
-
-        <form action="https://formspree.io/f/mwvaejre" method="POST">
-          <label for="contact-name">Your Name</label>
-          <input
-            id="contact-name"
-            type="text"
-            name="name"
-            autocomplete="name"
-            required
-          />
-          <label for="contact-email">Your Email</label>
-          <input
-            id="contact-email"
-            type="email"
-            name="email"
-            autocomplete="email"
-            required
-          />
-          <label for="contact-message">Message</label>
-          <textarea id="contact-message" name="message" rows="5"></textarea>
-          <button class="submit" type="submit">Send</button>
-        </form>
       </section>
     </main>
 
-    <!-- FOOTER -->
     <footer>
-      <div>Adam Szilagyi - Portfolio</div>
-
+      <div>ADAM SZILAGYI — Video Production Portfolio</div>
       <div>
-        <a
-          href="https://www.youtube.com/"
-          target="_blank"
-          rel="noopener noreferrer"
-          >YT</a
-        >
-        |
-        <a
-          href="https://www.instagram.com"
-          target="_blank"
-          rel="noopener noreferrer"
-          >IG</a
-        >
-        |
-        <a
-          href="https://www.linkedin.com/"
-          target="_blank"
-          rel="noopener noreferrer"
-          >LI</a
-        >
+        <a href="mailto:adamszilagyi@gmail.com">Email</a> |
+        <a href="cv.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
       </div>
     </footer>
-
-    <!-- SLIDESHOW SCRIPT -->
-    <script>
-      const reduceMotion = window.matchMedia(
-        "(prefers-reduced-motion: reduce)",
-      ).matches;
-
-      const infoImgs = [
-        [
-          "images/thumbs/info1.jpg",
-          "images/thumbs/small/info1.jpg 360w, images/thumbs/info1.jpg 720w",
-        ],
-        [
-          "images/thumbs/info2.jpg",
-          "images/thumbs/small/info2.jpg 360w, images/thumbs/info2.jpg 720w",
-        ],
-        [
-          "images/thumbs/info3.jpg",
-          "images/thumbs/small/info3.jpg 360w, images/thumbs/info3.jpg 720w",
-        ],
-        [
-          "images/thumbs/info4.jpg",
-          "images/thumbs/small/info4.jpg 360w, images/thumbs/info4.jpg 720w",
-        ],
-      ];
-
-      const freeImgs = [
-        [
-          "images/thumbs/free1.jpg",
-          "images/thumbs/small/free1.jpg 360w, images/thumbs/free1.jpg 720w",
-        ],
-        [
-          "images/thumbs/free2.jpg",
-          "images/thumbs/small/free2.jpg 360w, images/thumbs/free2.jpg 720w",
-        ],
-        [
-          "images/thumbs/free3.jpg",
-          "images/thumbs/small/free3.jpg 360w, images/thumbs/free3.jpg 720w",
-        ],
-      ];
-
-      const newsImgs = [
-        [
-          "images/thumbs/news1.jpg",
-          "images/thumbs/small/news1.jpg 360w, images/thumbs/news1.jpg 720w",
-        ],
-        [
-          "images/thumbs/news2.jpg",
-          "images/thumbs/small/news2.jpg 360w, images/thumbs/news2.jpg 720w",
-        ],
-        [
-          "images/thumbs/news3.jpg",
-          "images/thumbs/small/news3.jpg 360w, images/thumbs/news3.jpg 720w",
-        ],
-      ];
-
-      let i1 = 0,
-        i2 = 0,
-        i3 = 0;
-
-      const swapPreview = (id, pair) => {
-        const image = document.getElementById(id);
-        image.src = pair[0];
-        image.srcset = pair[1];
-      };
-
-      if (!reduceMotion) {
-        setInterval(() => {
-          i1 = (i1 + 1) % infoImgs.length;
-          swapPreview("img1", infoImgs[i1]);
-
-          i2 = (i2 + 1) % freeImgs.length;
-          swapPreview("img2", freeImgs[i2]);
-
-          i3 = (i3 + 1) % newsImgs.length;
-          swapPreview("img3", newsImgs[i3]);
-        }, 2500);
-      }
-    </script>
-
-    <script>
-      const observer = new IntersectionObserver((entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("show");
-          }
-        });
-      });
-
-      document.querySelectorAll(".fade-in").forEach((el) => {
-        observer.observe(el);
-      });
-    </script>
   </body>
 </html>
