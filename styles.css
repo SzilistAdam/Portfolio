@@ -9,6 +9,9 @@
   --text-muted: oklch(0.76 0.006 240);
   --brand: oklch(0.86 0.006 240);
   --brand-strong: oklch(0.96 0.006 240);
+  --accent-amber: oklch(0.78 0.12 52);
+  --accent-copper: oklch(0.74 0.09 28);
+  --accent-blue: oklch(0.74 0.09 220);
   --button-start: oklch(0.38 0.01 240);
   --button-end: oklch(0.24 0.007 240);
   --border: oklch(0.96 0.008 240 / 0.14);
@@ -59,6 +62,15 @@ a {
 
 :focus-visible {
   outline: 2px solid rgba(255, 255, 255, 0.8);
+  outline-offset: 2px;
+}
+
+.nav-buttons a:focus-visible,
+.button-link:focus-visible,
+.title:focus-visible,
+.contact-card a:focus-visible,
+footer a:focus-visible {
+  outline: 2px solid rgba(255, 255, 255, 0.85);
   outline-offset: 2px;
 }
 
@@ -115,6 +127,23 @@ main {
   margin: 0 auto;
 }
 
+.skip-link {
+  position: absolute;
+  left: 16px;
+  top: -48px;
+  z-index: 40;
+  padding: 10px 14px;
+  border-radius: 10px;
+  background: var(--panel-bg);
+  color: var(--text);
+  text-decoration: none;
+  border: 1px solid var(--border);
+}
+
+.skip-link:focus {
+  top: 16px;
+}
+
 .section-shell {
   padding: 64px 0 24px;
 }
@@ -134,11 +163,26 @@ main {
 
 .eyebrow {
   margin-bottom: 12px;
-  color: var(--text-muted);
+  color: var(--accent-blue);
   text-transform: uppercase;
   letter-spacing: 0.12em;
   font-size: 0.72rem;
   font-weight: 700;
+}
+
+.section-heading {
+  position: relative;
+}
+
+.section-heading::before,
+.recognition-card::before {
+  content: "";
+  display: block;
+  width: 54px;
+  height: 3px;
+  margin-bottom: 12px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--accent-copper), var(--accent-blue));
 }
 
 h1 {
@@ -176,7 +220,7 @@ button.submit {
   min-height: 44px;
   padding: 10px 18px;
   border-radius: var(--radius-sm);
-  border: 1px solid rgba(255, 255, 255, 0.12);
+  border: 1px solid var(--border);
   background: linear-gradient(135deg, var(--button-start), var(--button-end));
   color: var(--text);
   text-decoration: none;
@@ -230,31 +274,53 @@ button.submit:focus-visible {
   color: var(--text-soft);
 }
 
-.hero-panel {
-  display: grid;
-  gap: 14px;
-  padding: 20px;
-  background: var(--panel-soft);
+.recognition-card {
+  position: relative;
+  padding: 22px 24px;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.02),
+    rgba(255, 255, 255, 0.01)
+  );
   border: 1px solid var(--border);
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow);
 }
 
-.mini-stat {
+.recognition-list span {
+  color: var(--accent-amber);
+}
+
+.recognition-intro {
+  margin-bottom: 18px;
+  color: var(--text-soft);
+  font-size: 1rem;
+}
+
+.recognition-list {
   display: grid;
-  gap: 2px;
-  padding: 14px 16px;
-  border: 1px solid var(--border);
-  border-radius: var(--radius-md);
-  background: rgba(255, 255, 255, 0.02);
+  gap: 14px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
-.mini-stat strong {
-  font-size: 1.15rem;
+.recognition-list li {
+  padding: 14px 0;
+  border-top: 1px solid var(--border);
+  color: var(--text-soft);
 }
 
-.mini-stat span {
-  color: var(--text-muted);
+.recognition-list li:first-child {
+  border-top: none;
+  padding-top: 0;
+}
+
+.recognition-list span {
+  display: block;
+  margin-bottom: 4px;
+  color: var(--text);
+  font-weight: 700;
 }
 
 .section-heading {
@@ -270,6 +336,12 @@ button.submit:focus-visible {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 24px;
+}
+
+.feature-grid-strong .feature-card:first-child,
+.feature-grid-strong .feature-card:nth-child(2) {
+  border-color: rgba(255, 255, 255, 0.18);
+  box-shadow: 0 18px 30px rgba(0, 0, 0, 0.22);
 }
 
 .feature-card {
@@ -491,7 +563,8 @@ button.submit {
 }
 
 .video-row {
-  display: flex;
+  display: grid;
+  grid-template-columns: minmax(220px, 280px) minmax(0, 1fr);
   align-items: flex-start;
   gap: 26px;
   padding: 30px 0;
@@ -500,7 +573,7 @@ button.submit {
 
 .video-card {
   display: block;
-  width: 280px;
+  width: min(100%, 280px);
   flex-shrink: 0;
   color: var(--text);
   text-decoration: none;
@@ -597,6 +670,10 @@ footer a {
   .feature-grid {
     display: grid;
   }
+
+  .video-row {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width: 768px) {
@@ -612,7 +689,6 @@ footer a {
 
   .section-shell,
   .contact,
-  .video-row,
   main {
     width: min(100%, calc(100% - 20px));
   }
@@ -621,11 +697,6 @@ footer a {
   .contact {
     padding-left: 0;
     padding-right: 0;
-  }
-
-  .video-row {
-    flex-direction: column;
-    align-items: flex-start;
   }
 
   .video-card {
