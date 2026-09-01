@@ -237,7 +237,11 @@ button.submit {
 }
 
 .button-link.secondary {
-  background: transparent;
+  background: linear-gradient(
+    135deg,
+    color-mix(in srgb, var(--accent-blue) 24%, var(--button-start)),
+    var(--button-end)
+  );
 }
 
 .button-link:hover,
