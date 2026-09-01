@@ -160,14 +160,51 @@
         </div>
       </section>
 
-      <section id="contact" class="contact" aria-labelledby="contact-heading">
-        <h2 id="contact-heading">Contact Me</h2>
-        <div class="contact-details">
-          <p>
-            <strong>Email:</strong>
-            <a href="mailto:adamszilagyi@gmail.com">adamszilagyi@gmail.com</a>
-          </p>
-          <p><strong>Location:</strong> Jacksonville, FL</p>
+      <section
+        id="contact"
+        class="contact fade-in"
+        aria-labelledby="contact-heading"
+      >
+        <div class="section-heading">
+          <p class="eyebrow">Contact</p>
+          <h2 id="contact-heading">Get in touch</h2>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-card">
+            <p>
+              <strong>Email:</strong>
+              <a href="mailto:adamszilagyi@gmail.com">adamszilagyi@gmail.com</a>
+            </p>
+            <p><strong>Location:</strong> Jacksonville, FL</p>
+            <p>
+              Available for part-time and freelance video production, editing,
+              videography, and content-creation opportunities in Jacksonville
+              and St. Johns County.
+            </p>
+          </div>
+
+          <form action="https://formspree.io/f/mwvaejre" method="POST">
+            <label for="contact-name">Your Name</label>
+            <input
+              id="contact-name"
+              type="text"
+              name="name"
+              autocomplete="name"
+              required
+            />
+            <label for="contact-email">Your Email</label>
+            <input
+              id="contact-email"
+              type="email"
+              name="email"
+              autocomplete="email"
+              required
+            />
+            <label for="contact-message">Message</label>
+            <textarea id="contact-message" name="message" rows="5"></textarea>
+            <button class="submit" type="submit">Send Message</button>
+          </form>
         </div>
       </section>
     </main>
