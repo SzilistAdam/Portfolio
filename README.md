@@ -113,6 +113,6 @@ http://localhost:8000
 
 ## Contact
 
-- Email: adamszilagyi@gmail.com
+- Email: adamsz4766@gmail.com
 - Location: Jacksonville, FL
 - Available for part-time and freelance video production opportunities in Jacksonville and St. Johns County.
