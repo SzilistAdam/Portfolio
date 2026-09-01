@@ -1,3 +1,4 @@
+/* Design tokens and color system */
 :root {
   --page-bg: oklch(0.13 0.005 240);
   --panel-bg: oklch(0.17 0.005 240);
@@ -23,6 +24,7 @@
   --max-width: 1100px;
 }
 
+/* Base element styles */
 * {
   box-sizing: border-box;
 }
@@ -75,6 +77,7 @@ footer a:focus-visible {
   outline-offset: 2px;
 }
 
+/* Layout and navigation */
 header {
   position: sticky;
   top: 0;
@@ -245,12 +248,6 @@ button.submit:focus-visible {
   box-shadow: var(--shadow);
 }
 
-.availability {
-  margin-bottom: 14px;
-  color: var(--text-soft);
-  font-weight: 600;
-}
-
 .about-inline {
   margin-top: 28px;
   padding-top: 20px;
@@ -265,18 +262,6 @@ button.submit:focus-visible {
 .about-inline p {
   max-width: 62ch;
   margin-bottom: 0;
-}
-
-.quick-links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  align-items: center;
-  color: var(--text-muted);
-}
-
-.quick-links a {
-  color: var(--text-soft);
 }
 
 .recognition-card {
@@ -406,23 +391,6 @@ button.submit:focus-visible {
 
 .meta-list li + li {
   margin-top: 8px;
-}
-
-.about-block {
-  padding-top: 72px;
-}
-
-.about-grid {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr);
-  gap: 28px;
-  align-items: center;
-  max-width: 960px;
-  padding: 24px 0 0;
-}
-
-.about-grid > div {
-  width: min(100%, 820px);
 }
 
 .headshot {
@@ -647,10 +615,6 @@ button.submit {
   color: var(--text-soft);
 }
 
-.footer-inline {
-  display: flex;
-}
-
 footer {
   display: flex;
   align-items: center;
@@ -668,6 +632,7 @@ footer a {
   text-decoration: none;
 }
 
+/* Responsive layout adjustments */
 @media (max-width: 900px) {
   .hero,
   .feature-grid,
