@@ -1,106 +1,118 @@
-# Adam Szilagyi - Video Production Portfolio
+# Adam Szilagyi | Video Production Portfolio
 
-## About This Portfolio
+A static portfolio website for Adam Szilagyi, showcasing documentary, news, informational, and creative video work produced for school and community projects in Jacksonville and St. Johns County, Florida.
 
-This is a professional video production portfolio showcasing the work of Adam Szilagyi. The portfolio demonstrates expertise in video editing, cinematography, and multimedia production across multiple project categories and styles.
+## Overview
 
-## Portfolio Structure
+This portfolio is designed to present Adam as a capable entry-level video producer, videographer, and editor with hands-on production experience. It emphasizes:
 
-### Pages
+- clear project categories
+- strong local and school-based storytelling work
+- award recognition and accomplishments
+- concise professional context
+- direct contact and resume access
 
-#### **Home (`index.html`)**
+## Current Page Structure
 
-- **About Me Section** — Introduction and background information
-- **Skills Section** — Technical proficiencies with mastery levels (Premiere Pro, After Effects, Camera Work)
-- **Portfolio Overview** — Quick links to three main portfolio categories with rotating preview images
-- **Contact Form** — Direct messaging for inquiries
+### Home page — index.html
 
-#### **Informational (`informational.html`)**
+The home page includes:
 
-Videos focused on storytelling, educational content, and narrative-based projects. Includes:
+- hero section with identity and role summary
+- about section
+- awards and accomplishments section
+- selected recent work cards
+- production skills and certifications
+- contact section
+- resume and email access
 
-- Jacksonville Zoo - Malayan Tiger Video
-- COVID Documentary - The COVID Chronicle
-- CHS Digital Media Academy Video-Strand
-- CHS Financial Technology Academy Video-Strand
+### Informational page — informational.html
 
-#### **Freeform (`freeform.html`)**
+This section highlights documentary and informational storytelling projects, including:
 
-Creative, experimental, and style-driven video work showcasing artistic vision and technical skill. Includes:
+- Jacksonville Zoo — Malayan Tiger Video
+- COVID Chronicle
+- CHS Digital Media Academy Video Strand
+- CHS Financial Technology Academy Video Strand
+
+### News page — news.html
+
+This section focuses on news and community feature storytelling, including:
+
+- CHS Spring Musical — News Feature
+- Hispanic Honors Society Basket Fundraiser
+- CHS Academy News Package
+
+### Freeform page — freeform.html
+
+This section includes creative and informational packages with a more stylistic approach, including:
 
 - Christmas Traditions Package
 - Earth Day Package
 - Thanksgiving Traditions Package
 
-#### **News Packages (`news.html`)**
+## Design and Interaction
 
-Professional news-style video packages and broadcast-style reporting examples. Includes:
+The site uses a dark, professional visual style with:
 
-- CHS Spring Musical Package
-- Hispanic Honors Society Basket Fundraiser Package
-- Academy News Package
-
-## Features
-
-### Video Gallery
-
-- **Responsive Grid Layout** — Adapts to different screen sizes
-- **Tagging System** — Videos tagged with relevant tools and skills used (Premiere Pro, After Effects, Camera Work, Audio)
-- **Hover Effects** — Interactive image scaling and smooth transitions
-- **Consistent Formatting** — Standardized title heights and description alignment to prevent layout shift
-
-### Design
-
-- **Dark Theme** — Modern, professional dark background (#0f0f0f) with white text
-- **Sticky Header** — Navigation always accessible at the top
-- **Fade-in Animations** — Smooth scroll-triggered reveal of content sections
-- **Mobile Responsive** — Full optimization for iPhone and tablet screens (≤768px)
-
-### Navigation
-
-- **Clickable Logo** — Title links back to home page from any page
-- **Main Navigation** — Quick access to all portfolio categories and CV
+- a restrained copper and cyan accent palette
+- sticky top navigation
+- section-based storytelling layout
+- responsive project cards and thumbnail layout
+- hover states for project imagery
+- accessible focus outlines and semantic page structure
 
 ## Technical Details
 
-- **Built with** — HTML5, CSS3
-- **Responsive Design** — Mobile-first approach with media queries
-- **Contact Integration** — Formspree.io for contact form handling
-- **Performance** — Image optimization with lazy loading potential
-- **Accessibility** — Semantic HTML and descriptive alt tags
+This project is a static HTML/CSS portfolio with no build system or framework required.
+
+Built with:
+
+- HTML5
+- CSS3
+- responsive layout styling
+- external video links to YouTube
+- Formspree contact form integration
 
 ## File Structure
 
+```text
+szilistadam4972.github.io/
+├── index.html              # Homepage
+├── informational.html      # Documentary and informational work
+├── news.html               # News and community coverage
+├── freeform.html           # Creative and freeform storytelling work
+├── styles.css              # Main stylesheet
+├── cv.pdf                  # Resume PDF
+├── images/                 # Project thumbnails and media assets
+├── impeccable/             # Design/product planning materials
+├── README.md               # Project documentation
+└── .gitignore              # Git ignore rules
 ```
-szilistadam4972.github.io/Portfolio
-├── index.html              # Home page
-├── informational.html      # Informational videos
-├── freeform.html          # Freeform creative work
-├── news.html              # News packages
-├── styles.css             # Main stylesheet
-├── cv.pdf                 # Resume
-├── images/                # Portfolio images and thumbnails
-└── README.md              # This file
+
+## Local Preview
+
+To view the site locally:
+
+```bash
+cd /Users/adamszilagyi/Desktop/portfolio/szilistadam4972.github.io
+python3 -m http.server 8000
 ```
 
-## How to Use
+Then open:
 
-1. Navigate using the top menu bar
-2. Click the portfolio title to return home from any page
-3. Hover over video thumbnails for interactive preview effects
-4. Click on videos to view full content (links to external platforms)
-5. Use the contact form to reach out for inquiries or collaboration
+```text
+http://localhost:8000
+```
 
-## Mobile Experience
+## Notes
 
-The portfolio is fully optimized for mobile devices with:
+- The portfolio is intended to be a clean, straightforward showcase for hiring and freelance opportunities.
+- The site is meant to highlight real work and local recognition without overstating experience.
+- Most project entries link to external video pages for full viewing.
 
-- Touch-friendly navigation
-- Stacked layout on small screens
-- Responsive images and text
-- Optimized font sizes
-- Full-width video displays
+## Contact
 
----
-
-_Last updated: April 2026_
+- Email: adamszilagyi@gmail.com
+- Location: Jacksonville, FL
+- Available for part-time and freelance video production opportunities in Jacksonville and St. Johns County.
